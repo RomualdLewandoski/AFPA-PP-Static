@@ -18,30 +18,19 @@
 
 </head>
 
-<body>
+<body class="scrollbar-macosx">
 
-<nav class="site-header fixed-top py-1 navbar">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <btn class="py-2" onclick="scrollTo('body');">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                 class="d-block mx-auto">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
-                <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
-                <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
-                <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
-                <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
-                <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-            </svg>
-        </btn>
+<nav class="site-header fixed-top py-1 navbar ">
+    <div class="container d-flex flex-column flex-md-row justify-content-between d-none ">
+        <a class="py-2 " href="">Le nom de mon site</a>
         <a class="py-2 d-none d-md-inline-block" href="#features">Fonctionnalités</a>
         <a class="py-2 d-none d-md-inline-block" href="#price">Prix</a>
         <a class="py-2 d-none d-md-inline-block" href="#talking">Retours clients</a>
         <a class="py-2 d-none d-md-inline-block" href="#about">A propos</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Inscription / Connexion</a>
+        <a class="py-2 d-none d-md-inline-block" href="login.html">Inscription / Connexion</a>
     </div>
 </nav>
+<a href="#" id="scroll"  style="display: none;"><span></span></a>
 <header class="masthead"
         style="background: linear-gradient(to bottom, rgba(92, 77, 66, .8) 0, rgba(92, 77, 66, .8) 100%), url(https://picsum.photos/300/200/?blur=2) no-repeat; background-size: 100% 100%; ">
     <div class="container h-100">
@@ -58,7 +47,7 @@
     </div>
 </header>
 
-<a href="#" id="scroll" style="display: none;"><span></span></a>
+
 
 <section class="page-section " id="features">
     <div class="container h-100">
@@ -150,7 +139,7 @@
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Vote activités</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Vote Hotel</li>
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Utilisateurs
-                                illimités
+                                illimités (2)
                             </li>
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Projets
                                 illimités
@@ -159,10 +148,10 @@
                                 budget
                             </li>
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Nombre
-                                d'activités limitées
+                                d'activités illimitées (5)
                             </li>
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Nombre
-                                d'hôtels limités
+                                d'hôtels illimités (2)
                             </li>
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Feuille de
                                 route PDF
@@ -187,8 +176,8 @@
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Utilisateurs illimités</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Projets illimités</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Gestion de budget</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Nombre d'activités limitées</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Nombre d'hôtels limités</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Nombre d'activités illimitées</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Nombre d'hôtels illimités</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Feuille de route PDF</li>
                         </ul>
                         <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
@@ -209,106 +198,107 @@
 </section>-->
 
 <section class="page-section" id="talking">
-    <h2 class="text-center mt-4">Ils parlent de nous </h2>
-    <hr class="divider light my-4">
-    <div class="row items text-black-50 ">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+    <div class="container-fluid">
+        <h2 class="text-center mt-4">Ils parlent de nous </h2>
+        <hr class="divider light my-4">
+        <div class="row items text-black-50 ">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+                        </div>
+                        <div class="col-sm-5 ">
+                            <div class="value-set" data-stars="4"></div>
+                            <br>
+                            <h5 class="card-title">Delbert Simonas</h5>
+                        </div>
                     </div>
-                    <div class="col-sm-5 ">
-                        <div class="value-set" data-stars="4"></div>
-                        <br>
-                        <h5 class="card-title">Delbert Simonas</h5>
-                    </div>
+                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
+                        sapien, mollis
+                        a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
+                        nisi, et
+                        tristique lacus condimentum."</p>
                 </div>
-                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
-                    sapien, mollis
-                    a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
-                    nisi, et
-                    tristique lacus condimentum."</p>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+                        </div>
+                        <div class="col-sm-5 ">
+                            <div class="value-set" data-stars="5"></div>
+                            <br>
+                            <h5 class="card-title">Tikoh Amin</h5>
+                        </div>
                     </div>
-                    <div class="col-sm-5 ">
-                        <div class="value-set" data-stars="5"></div>
-                        <br>
-                        <h5 class="card-title">Tikoh Amin</h5>
-                    </div>
+                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
+                        sapien, mollis
+                        a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
+                        nisi, et
+                        tristique lacus condimentum."</p>
                 </div>
-                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
-                    sapien, mollis
-                    a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
-                    nisi, et
-                    tristique lacus condimentum."</p>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+                        </div>
+                        <div class="col-sm-5 ">
+                            <div class="value-set" data-stars="2"></div>
+                            <br>
+                            <h5 class="card-title">Alain Terrieur</h5>
+                        </div>
                     </div>
-                    <div class="col-sm-5 ">
-                        <div class="value-set" data-stars="2"></div>
-                        <br>
-                        <h5 class="card-title">Alain Terrieur</h5>
-                    </div>
+                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
+                        sapien, mollis
+                        a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
+                        nisi, et
+                        tristique lacus condimentum."</p>
                 </div>
-                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
-                    sapien, mollis
-                    a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
-                    nisi, et
-                    tristique lacus condimentum."</p>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+                        </div>
+                        <div class="col-sm-5 ">
+                            <div class="value-set" data-stars="1"></div>
+                            <br>
+                            <h5 class="card-title">John Doe</h5>
+                        </div>
                     </div>
-                    <div class="col-sm-5 ">
-                        <div class="value-set" data-stars="1"></div>
-                        <br>
-                        <h5 class="card-title">John Doe</h5>
-                    </div>
+                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
+                        sapien, mollis
+                        a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
+                        nisi, et
+                        tristique lacus condimentum."</p>
                 </div>
-                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
-                    sapien, mollis
-                    a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
-                    nisi, et
-                    tristique lacus condimentum."</p>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="assets/img/profile.png" width="100%" class="rounded-circle">
+                        </div>
+                        <div class="col-sm-5 ">
+                            <div class="value-set" data-stars="3"></div>
+                            <br>
+                            <h5 class="card-title">Ivan Desfruits</h5>
+                        </div>
                     </div>
-                    <div class="col-sm-5 ">
-                        <div class="value-set" data-stars="3"></div>
-                        <br>
-                        <h5 class="card-title">Ivan Desfruits</h5>
-                    </div>
+                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
+                        sapien, mollis
+                        a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
+                        nisi, et
+                        tristique lacus condimentum."</p>
                 </div>
-                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus
-                    sapien, mollis
-                    a nibh et, ullamcorper egestas leo. Vestibulum aliquet consequat tempor. Fusce tristique arcu
-                    nisi, et
-                    tristique lacus condimentum."</p>
             </div>
-        </div>
 
+        </div>
     </div>
-
 
 </section>
 
@@ -337,7 +327,7 @@
                 <div class="card bg-info text-white">
                     <div class="card-body">
                         <h4 class="text-center"><i class="fa fa-mug-hot "></i> Tasses de café</h4>
-                        <h5 class="text-center mt-2"><span class="Count">500</span></h5>
+                        <h5 class="text-center mt-2"><span class="Count">10</span></h5>
                     </div>
                 </div>
             </div>
@@ -356,58 +346,30 @@
     </div>
 </section>
 
-<footer class="container py-5">
+<footer class="container-fluid py-5 bg-light foot">
     <div class="row">
         <div class="col-12 col-md">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                 class="d-block mb-2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
-                <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
-                <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
-                <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
-                <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
-                <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-            </svg>
+           <h2>Mon site</h2>
             <small class="d-block mb-3 text-muted">&copy; 2020</small>
         </div>
-        <div class="col-6 col-md">
-            <h5>Features</h5>
+        <div class="col-6 col-md offset-4">
+            <h5>Link1</h5>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Cool stuff</a></li>
-                <li><a class="text-muted" href="#">Random feature</a></li>
-                <li><a class="text-muted" href="#">Team feature</a></li>
-                <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                <li><a class="text-muted" href="#">Another one</a></li>
-                <li><a class="text-muted" href="#">Last time</a></li>
+                <li><a class="text-muted" href="#">link</a></li>
+                <li><a class="text-muted" href="#">link</a></li>
+                <li><a class="text-muted" href="#">link</a></li>
+                <li><a class="text-muted" href="#">link</a></li>
+                <li><a class="text-muted" href="#">link</a></li>
+                <li><a class="text-muted" href="#">link</a></li>
             </ul>
         </div>
+
         <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Resource</a></li>
-                <li><a class="text-muted" href="#">Resource name</a></li>
-                <li><a class="text-muted" href="#">Another resource</a></li>
-                <li><a class="text-muted" href="#">Final resource</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Business</a></li>
-                <li><a class="text-muted" href="#">Education</a></li>
-                <li><a class="text-muted" href="#">Government</a></li>
-                <li><a class="text-muted" href="#">Gaming</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>About</h5>
+            <h5>A propos</h5>
             <ul class="list-unstyled text-small">
                 <li><a class="text-muted" href="#">Team</a></li>
-                <li><a class="text-muted" href="#">Locations</a></li>
-                <li><a class="text-muted" href="#">Privacy</a></li>
-                <li><a class="text-muted" href="#">Terms</a></li>
+                <li><a class="text-muted" href="#">Confidentialité</a></li>
+                <li><a class="text-muted" href="#">Cgu/Cgv</a></li>
             </ul>
         </div>
     </div>
@@ -435,3 +397,5 @@
 </script>
 </body>
 </html>
+
+

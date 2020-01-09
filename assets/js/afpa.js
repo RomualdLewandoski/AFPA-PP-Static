@@ -1,29 +1,33 @@
-$(function() {
+$(function () {
     /**
      * Smooth scrolling to page anchor on click
      **/
-    $("a[href*='#']:not([href='#'])").click(function() {
+    $("a[href*='#']:not([href='#'])").click(function () {
+
         if (
             location.hostname == this.hostname
-            && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
+            && this.pathname.replace(/^\//, "") == location.pathname.replace(/^\//, "")
         ) {
+            event.preventDefault()
             var anchor = $(this.hash);
-            anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
-            if ( anchor.length ) {
-                $("html, body").animate( { scrollTop: anchor.offset().top }, 1500);
+            anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) + "]");
+            if (anchor.length) {
+                $("html, body").animate({scrollTop: anchor.offset().top}, 1500);
             }
         }
+
+
     });
 
-    function scrollTo( target ) {
-        if( target.length ) {
-            $("html, body").stop().animate( { scrollTop: target.offset().top }, 1500);
+    function scrollTo(target) {
+        if (target.length) {
+            $("html, body").stop().animate({scrollTop: target.offset().top}, 1500);
         }
     }
 
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     $('.items').slick({
         dots: true,
@@ -64,7 +68,7 @@ $(document).ready(function(){
 
 $('.Count').each(function () {
     var $this = $(this);
-    jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+    jQuery({Counter: 0}).animate({Counter: $this.text()}, {
         duration: 3000,
         easing: 'swing',
         step: function () {
@@ -74,16 +78,16 @@ $('.Count').each(function () {
 });
 
 
-$(document).ready(function(){
-    $(window).scroll(function(){
+$(document).ready(function () {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('#scroll').fadeIn();
         } else {
             $('#scroll').fadeOut();
         }
     });
-    $('#scroll').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
+    $('#scroll').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
         return false;
     });
 });
