@@ -4,7 +4,8 @@
         <div class="col-12 col-md">
 
 
-            <h2 style="display: inline-block"><img src="assets/img/logo.png" width="20%" height="auto"
+            <h2 style="display: flex;
+   align-items:center;"><img src="assets/img/logo.png" width="20%" height="auto"
                                                    style="filter: invert(100%); vertical-align:0%"> MOONLY</h2>
 
 
@@ -32,28 +33,4 @@
         </div>
     </div>
 </footer>
-
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/afpa.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/holder.min.js"></script>
-<script>
-    Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-    });
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="assets/vendor/stars/js/stars.min.js"></script>
-<script>
-
-    $(".value-set").each(function () {
-        $(this).stars({value: $(this).data("stars")});
-    });
-</script>
-</body>
-</html>
-
 

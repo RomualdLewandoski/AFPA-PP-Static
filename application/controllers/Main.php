@@ -18,7 +18,13 @@ class Main extends CI_Controller
         $this->load->view('front/talking');
         $this->load->view('front/about');
         $this->load->view('front/foot');
+        $this->load->view('front/end');
     }
 
-
+    public function login(){
+        $this->load->view('front/head');
+        $this->load->view('front/nav');
+        $this->load->view('front/login');
+        $this->load->view('front/end');
+    }
 }
