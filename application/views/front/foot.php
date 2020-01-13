@@ -36,7 +36,7 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/afpa.js"></script>
 <script src="assets/js/popper.min.js"></script>
-<script src=assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/holder.min.js"></script>
 <script>
     Holder.addTheme('thumb', {
