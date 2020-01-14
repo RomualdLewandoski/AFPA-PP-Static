@@ -91,3 +91,22 @@ $(document).ready(function () {
         return false;
     });
 });
+
+$(document).ready(function () {
+    var link = $("link.theme");
+    if($.cookie("css")) {
+        link.attr("href",$.cookie("css"));
+    }
+    $('#btn-theme').click(function () {
+        var themed =link.attr("href");
+        var light = "assets/css/light.css";
+        var black = "assets/css/dark.css"
+        if (themed == light) {
+            link.attr("href", black);
+
+        } else {
+            link.attr("href", light);
+        }
+        $.cookie("css", link.attr('href'), {expires: 365, path: '/'});
+    });
+});

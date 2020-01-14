@@ -2,9 +2,7 @@
 
 body {
     background-repeat: repeat;
-    background: #252735;
     font-family: Roboto, sans-serif;
-    color: #e9ecef;
     font-size: 14px
 }
 
@@ -606,7 +604,6 @@ dt {
 }
 
 .topbar .topbar-left {
-    background: #2a3142;
     float: left;
     text-align: center;
     height: 70px;
@@ -624,7 +621,6 @@ dt {
 }
 
 .navbar-custom {
-    background-color: #36394c;
     border-radius: 0;
     margin-bottom: 0;
     padding: 0 10px 0 0;
@@ -660,7 +656,6 @@ dt {
 .side-menu {
     width: 240px;
     z-index: 10;
-    background: #2a3142;
     bottom: 0;
     margin-top: 0;
     padding-bottom: 30px;
@@ -693,7 +688,6 @@ dt {
     display: inline-block;
     height: 70px;
     width: 60px;
-    background-color: #36394c;
     font-size: 24px
 }
 
@@ -908,7 +902,6 @@ dt {
     text-align: center !important;
     padding: 19px 30px 20px;
     position: absolute;
-    background-color: #36394c;
     right: 0;
     left: 240px;
     font-family: Sarabun, sans-serif
@@ -1265,7 +1258,6 @@ button:focus {
     -webkit-box-shadow: 0 0 13px 0 rgba(36, 36, 41, .44);
     box-shadow: 0 0 13px 0 rgba(36, 36, 41, .44);
     margin-bottom: 30px;
-    background: #2a3142
 }
 
 .card .card-footer, .card .card-header {

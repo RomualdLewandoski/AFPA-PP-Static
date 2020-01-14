@@ -9,5 +9,7 @@
 <script src="assets/js/jquery.slimscroll.js"></script>
 <script src="assets/js/waves.min.js"></script><!-- App js -->
 <script src="assets/js/app.js"></script>
+<script src="assets/js/cookie.js"></script>
+<script src="assets/js/afpa.js"></script>
 </body>
 </html>

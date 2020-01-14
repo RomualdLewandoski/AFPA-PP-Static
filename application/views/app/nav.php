@@ -6,8 +6,10 @@
         <nav class="navbar-custom">
             <ul class="navbar-right list-inline float-right mb-0">
 
+                <li class="dropdown notification-list list-inline-item d-none d-md-inline-block"><a
+                            class="nav-link waves-effect" href="#" id="btn-theme"><i
+                                class="fa fa-moon"></i></a></li>
                 <!-- notification -->
-
                 <li class="dropdown notification-list list-inline-item"><a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                         <i class="mdi mdi-bell-outline noti-icon"></i>
                         <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>

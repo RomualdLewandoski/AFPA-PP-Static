@@ -1,0 +1,44 @@
+body{
+    color: #999;
+    background-color: #f9f9f9;
+}
+
+.navbar-custom {
+    background-color: #2b333c;
+}
+
+.button-menu-mobile {
+    background-color: #2b333c;
+}
+
+.topbar .topbar-left {
+    background: #495b6c;
+}
+
+.side-menu {
+    background: #495b6c;
+}
+.page-title-box .page-title {
+    color: #777;
+}
+
+.page-title-box .breadcrumb a {
+    color: #777!important;
+}
+
+.page-title-box .breadcrumb .active {
+    color: #777!important;
+}
+
+.card {
+    background: #fff;
+    color: #777;
+}
+
+.footer {
+    background-color: #fefefe;
+}
+
+.table {
+    color: #777!important;
+}
