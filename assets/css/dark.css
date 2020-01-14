@@ -35,3 +35,33 @@ body {
 .badge-primary {
     background-color: #7289da!important;
 }
+
+.form-control {
+    color: #dee2e6 !important;
+    background: #40444b;
+}
+.form-control:focus{
+    background: #40444b !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input::-webkit-clear-button
+{
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    color: #dee2e6;
+}
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+    background: none;
+    color: #dee2e6;
+}
+
+input[type=date] {
+    -moz-appearance:textfield;
+}

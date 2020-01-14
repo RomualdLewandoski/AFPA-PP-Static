@@ -14,8 +14,8 @@
                                     class="float-right menu-arrow"><i
                                         class="mdi mdi-chevron-right"></i></span></span></a>
                     <ul class="submenu">
-                        <li><a href="email-read.html">Mes projets</a></li>
-                        <li><a href="email-compose.html">Nouveau projet</a></li>
+                        <li><a href="/app/view">Mes projets</a></li>
+                        <li><a href="/app/new">Nouveau projet</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Gestion du projet</li>

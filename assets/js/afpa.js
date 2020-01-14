@@ -100,8 +100,8 @@ $(document).ready(function () {
     $('#btn-theme').click(function () {
         event.preventDefault();
         var themed = link.attr("href");
-        var light = "assets/css/light.css";
-        var black = "assets/css/dark.css"
+        var light = "/assets/css/light.css";
+        var black = "/assets/css/dark.css"
         if (themed == light) {
             link.attr("href", black);
 

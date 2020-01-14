@@ -5,7 +5,7 @@
 
 
             <h2 style="display: flex;
-   align-items:center;"><img src="assets/img/logo.png" width="20%" height="auto"
+   align-items:center;"><img src="/assets/img/logo.png" width="20%" height="auto"
                                                    style="filter: invert(100%); vertical-align:0%"> MOONLY</h2>
 
 

@@ -20,7 +20,25 @@ class App extends CI_Controller
         $this->load->view("app/nav");
         $this->load->view("app/left");
         $this->load->view("app/pagetop");
-        $this->load->view("app/blank");
+        $this->load->view("app/dashboard");
+        $this->load->view("app/foot");
+    }
+
+    public function createProject(){
+        $this->load->view("app/head");
+        $this->load->view("app/nav");
+        $this->load->view("app/left");
+        $this->load->view("app/pagetop");
+        $this->load->view("app/create");
+        $this->load->view("app/foot");
+    }
+
+    public function listProject(){
+        $this->load->view("app/head");
+        $this->load->view("app/nav");
+        $this->load->view("app/left");
+        $this->load->view("app/pagetop");
+
         $this->load->view("app/foot");
     }
 }
