@@ -1,3 +1,7 @@
+</div><!-- container-fluid -->
+</div><!-- content -->
+
+
 <footer class="footer">© <?php echo date("Y");?> Moonly.fr <span class="d-none d-sm-inline-block">- Fait avec <i
             class="mdi mdi-heart text-danger"></i></span> par Romuald Detrait.
 </footer>

@@ -19,6 +19,7 @@ class App extends CI_Controller
         $this->load->view("app/head");
         $this->load->view("app/nav");
         $this->load->view("app/left");
+        $this->load->view("app/pagetop");
         $this->load->view("app/blank");
         $this->load->view("app/foot");
     }

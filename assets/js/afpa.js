@@ -94,11 +94,12 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var link = $("link.theme");
-    if($.cookie("css")) {
-        link.attr("href",$.cookie("css"));
+    if ($.cookie("css")) {
+        link.attr("href", $.cookie("css"));
     }
     $('#btn-theme').click(function () {
-        var themed =link.attr("href");
+        event.preventDefault();
+        var themed = link.attr("href");
         var light = "assets/css/light.css";
         var black = "assets/css/dark.css"
         if (themed == light) {

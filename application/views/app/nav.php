@@ -6,7 +6,7 @@
         <nav class="navbar-custom">
             <ul class="navbar-right list-inline float-right mb-0">
 
-                <li class="dropdown notification-list list-inline-item d-none d-md-inline-block"><a
+                <li class="dropdown notification-list list-inline-item "><a
                             class="nav-link waves-effect" href="#" id="btn-theme"><i
                                 class="fa fa-moon"></i></a></li>
                 <!-- notification -->
