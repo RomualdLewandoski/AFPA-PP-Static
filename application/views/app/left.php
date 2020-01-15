@@ -5,7 +5,7 @@
             <ul class="metismenu" id="side-menu">
                 <li class="menu-title">Accueil</li>
                 <li>
-                    <a href="/app" class="waves-effect">
+                    <a href="/app" class="waves-effect"  id="menu-home">
                         <i class="ti-home"></i>
                         <span>Accueil</span>
                     </a>
@@ -14,13 +14,53 @@
                                     class="float-right menu-arrow"><i
                                         class="mdi mdi-chevron-right"></i></span></span></a>
                     <ul class="submenu">
-                        <li><a href="/app/view">Mes projets</a></li>
-                        <li><a href="/app/new">Nouveau projet</a></li>
+                        <li id="listProject"><a href="/app/view">Mes projets</a></li>
+                        <li id="createProject"><a href="/app/new">Nouveau projet</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">Gestion du projet</li>
 
-                <!-- TODO A FAIRE APPARAITRE SSI UN PROJET EST CHARGER -->
+                <?php
+                if ($project) { ?>
+
+                    <li>
+                        <a href="/app/view/<?php echo $id;?>" class="waves-effect">
+                            <i class="fa fa-newspaper"></i>
+                            <span>Aperçu</span>
+                        </a>
+
+                        <a href="/app/users/<?php echo $id;?>" class="waves-effect">
+                            <i class="fa fa-user"></i>
+                            <span>Participants</span>
+                        </a>
+
+                        <a href="/app/activity/<?php echo $id;?>" class="waves-effect">
+                            <i class="fa fa-snowboarding"></i>
+                            <span>Activité</span>
+                        </a>
+
+                        <a href="/app/hostel/<?php echo $id;?>" class="waves-effect">
+                            <i class="fa fa-hotel"></i>
+                            <span>Hôtel</span>
+                        </a>
+
+                        <?php
+                        if ($premium){?>
+                            <a href="/app/wallet/<?php echo $id;?>" class="waves-effect">
+                                <i class="fa fa-chart-line"></i>
+                                <span>Budget</span>
+                            </a>
+                        <?php }
+                        ?>
+
+
+                        <a href="/app/settings/<?php echo $id;?>" class="waves-effect">
+                            <i class="fa fa-cogs"></i>
+                            <span>Paramètres</span>
+                        </a>
+                    </li>
+                <?php }
+                ?>
 
             </ul>
         </div><!-- Sidebar -->

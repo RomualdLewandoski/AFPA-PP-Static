@@ -2,7 +2,7 @@
 
         <div class="row">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card" id="myProject">
                     <div class="card-body"><h4 class="mt-0 header-title mb-4">Mes projets</h4>
                         <div class="table-responsive">
                             <table class="table table-hover">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" id="myActivity">
                     <div class="card-body"><h4 class="mt-0 header-title mb-4">Dernières activitées</h4>
                         <ol class="activity-feed">
                             <li class="feed-item">

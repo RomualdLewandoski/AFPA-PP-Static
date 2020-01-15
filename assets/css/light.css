@@ -45,15 +45,15 @@ body{
 
 
 .form-control {
-    color: #555 !important;
-    background: #fff;
+    color: #777 !important;
+    background: #fff !important;
     border: 1px solid #ccc!important;
 }
 .form-control:focus{
     background: #fff !important;
 }
 .form-control input {
-    color: #555 !important;
+    color: red !important;
 }
 
 input::-webkit-outer-spin-button,
@@ -85,4 +85,9 @@ input[type=date] {
 
 .form-control:-moz-placeholder {
     color: #555
+}
+
+.bg-primary {
+    background-color: #38a4f8!important;
+    color: #fff!important;
 }

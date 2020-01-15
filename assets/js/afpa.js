@@ -1,7 +1,5 @@
 $(function () {
-    /**
-     * Smooth scrolling to page anchor on click
-     **/
+
     $("a[href*='#']:not([href='#'])").click(function () {
 
         if (
@@ -104,7 +102,6 @@ $(document).ready(function () {
         var black = "/assets/css/dark.css"
         if (themed == light) {
             link.attr("href", black);
-
         } else {
             link.attr("href", light);
         }

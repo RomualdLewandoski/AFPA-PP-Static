@@ -16,3 +16,8 @@
 
             </div>
         </div><!-- end row -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+            </button>
+            <strong>Vous êtes nouveau?</strong> Laissez vous guider par notre outils de découverte .
+        </div>

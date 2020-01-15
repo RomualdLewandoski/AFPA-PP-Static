@@ -38,7 +38,7 @@ body {
 
 .form-control {
     color: #dee2e6 !important;
-    background: #40444b;
+    background: #40444b!important;
 }
 .form-control:focus{
     background: #40444b !important;

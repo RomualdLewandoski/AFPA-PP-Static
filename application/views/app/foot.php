@@ -13,5 +13,12 @@
 <script src="/assets/js/jquery.slimscroll.js"></script>
 <script src="/assets/js/waves.min.js"></script><!-- App js -->
 <script src="/assets/js/app.js"></script>
+<script src="/assets/js/afpa.js"></script>
+<link rel="stylesheet" href="/assets/css/iGuider.css">
+<script src="/assets/js/temp.js"></script>
+
+<link rel="stylesheet" href="/assets/css/iGuider-theme-material.css">
+<script src="/assets/js/iGuider-theme-material.js"></script>
+<script src="/assets/js/tuto.js"></script>
 </body>
 </html>

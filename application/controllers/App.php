@@ -16,29 +16,50 @@ class App extends CI_Controller
 
     public function index()
     {
+        $data['project'] = false;
         $this->load->view("app/head");
         $this->load->view("app/nav");
-        $this->load->view("app/left");
+        $this->load->view("app/left", $data);
         $this->load->view("app/pagetop");
         $this->load->view("app/dashboard");
         $this->load->view("app/foot");
     }
 
     public function createProject(){
+        $data['project'] = false;
         $this->load->view("app/head");
         $this->load->view("app/nav");
-        $this->load->view("app/left");
+        $this->load->view("app/left", $data);
         $this->load->view("app/pagetop");
         $this->load->view("app/create");
         $this->load->view("app/foot");
     }
 
     public function listProject(){
+        $data['project'] = false;
         $this->load->view("app/head");
         $this->load->view("app/nav");
-        $this->load->view("app/left");
+        $this->load->view("app/left", $data);
         $this->load->view("app/pagetop");
         $this->load->view("app/list");
+        $this->load->view("app/foot");
+    }
+
+    public function viewProject($id = FALSE){
+        $data['project'] = true;
+        $data['id'] = $id;
+        if ($id == 1 ){
+            $data['premium'] = true;
+        }else if ($id == "tuto"){
+            $data['premium'] = false;
+        }else{
+            $data['premium'] = false;
+        }
+        $this->load->view("app/head");
+        $this->load->view("app/nav");
+        $this->load->view("app/left", $data);
+        $this->load->view("app/pagetop");
+        $this->load->view("app/view");
         $this->load->view("app/foot");
     }
 }
