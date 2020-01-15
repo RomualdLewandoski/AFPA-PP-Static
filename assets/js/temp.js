@@ -4562,7 +4562,7 @@ var iGuider;
     var wrapper = $(_0x4f9f[9]);
     /** @type {!Array} */
     var $elementColumns = [_0x4f9f[1038], _0x4f9f[1039], _0x4f9f[1040], _0x4f9f[296], _0x4f9f[1041], _0x4f9f[1042], _0x4f9f[1043], _0x4f9f[1044], _0x4f9f[1045], _0x4f9f[1046], _0x4f9f[1047], _0x4f9f[1048], _0x4f9f[1049], _0x4f9f[92], _0x4f9f[1050], _0x4f9f[1051]];
-    if (window[_0x4f9f[121]][_0x4f9f[1052]] != _0x4f9f[1053]) {
+    /*if (window[_0x4f9f[121]][_0x4f9f[1052]] != _0x4f9f[1053]) {
         wrapper = $(_0x4f9f[415])[_0x4f9f[413]]({
             "position": _0x4f9f[1054],
             "width": _0x4f9f[804],
@@ -4585,17 +4585,17 @@ var iGuider;
             }, 500);
         }, 1000);
         /** @type {number} */
-        var j = 0;
+       /* var j = 0;
         setInterval(function () {
             var data = $($elementColumns[j])[_0x4f9f[1062]](0);
             wrapper[_0x4f9f[93]](data);
             j++;
             if (j >= $elementColumns[_0x4f9f[66]]) {
                 /** @type {number} */
-                j = 0;
+               /* j = 0;
             }
         }, 5000);
-    }
+    }*/
     $(window)[_0x4f9f[545]](_0x4f9f[837], function () {
         $(document)[_0x4f9f[545]](_0x4f9f[457], _0x4f9f[1063], function () {
             var artistTrack = $(this)[_0x4f9f[64]](_0x4f9f[1064]);
