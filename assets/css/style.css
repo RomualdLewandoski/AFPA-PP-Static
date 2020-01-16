@@ -3674,3 +3674,10 @@ a.faq[data-toggle=collapse]:before {
         overflow: inherit !important
     }
 }
+
+.dataTables_length{
+    display: inline-block!important;
+}
+.dataTables_length .custom-select {
+ width: auto!important;
+}

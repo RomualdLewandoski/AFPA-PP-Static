@@ -24,7 +24,7 @@
                 if ($project) { ?>
 
                     <li>
-                        <a href="/app/view/<?php echo $id;?>" class="waves-effect">
+                        <a href="/app/view/<?php echo $id;?>" class="waves-effect" id="viewProject">
                             <i class="fa fa-newspaper"></i>
                             <span>Aperçu</span>
                         </a>

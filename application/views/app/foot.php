@@ -19,6 +19,9 @@
 
 <link rel="stylesheet" href="/assets/css/iGuider-theme-material.css">
 <script src="/assets/js/iGuider-theme-material.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 <script src="/assets/js/tuto.js"></script>
 </body>
 </html>
+

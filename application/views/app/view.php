@@ -1,3 +1,4 @@
+<h3>Voyage a Rome</h3>
 <div class="row" id="infopanel">
     <div class="col-xl-3 col-md-6">
         <div class="card mini-stat bg-primary text-white">
@@ -81,10 +82,144 @@
 
 </div>
 
+
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6" id="activity">
         <div class="card">
-            <div class="card-body">plop</div>
+            <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between pb-4">
+                    <h4 class="card-title mb-0"><i class="fa fa-snowboarding"></i> Proposition d'activitées</h4>
+                    <p class="mb-0">
+                        Ajouter <i class="fa fa-plus"></i>
+                    </p>
+                </div>
+
+                <table class="table responsive  no-tab text-center" id="table_activity">
+                    <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Nom</th>
+                        <th>Jours</th>
+                        <th>Informations</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <td>
+                            #1
+                        </td>
+                        <td>
+                            Visite de la maison de Rocco Siffredi
+                        </td>
+                        <td>
+                            1er jour
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-info">Voir</a>
+                            5 <i class="fa fa-arrow-up text-success"></i>
+                            0 <i class="fa fa-arrow-down text-danger"></i>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <script type="application/javascript">
+                    $(document).ready(function () {
+                        $('#table_activity').DataTable({
+                            "searching": false,
+                            "order": [[0, "asc"]],
+
+                            "language": {
+                                "lengthMenu": "_MENU_ par page",
+                                "zeroRecords": "Aucune donnée",
+                                "info": "Page _PAGE_ sur_PAGES_",
+                                "search": "Recherche",
+                                "infoEmpty": "Aucune donnée",
+                                "infoFiltered": "(Filtré depuis _MAX_ entrée)",
+                                "paginate": {
+                                    "previous": "Précédent",
+                                    "next": "Suivant"
+                                }
+                            }
+                        });
+                    });
+
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6" id="hotel">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between pb-4">
+                    <h4 class="card-title mb-0"><i class="fa fa-hotel"></i> Proposition d'Hôtels</h4>
+                    <p class="mb-0">
+                        Ajouter <i class="fa fa-plus"></i>
+                    </p>
+                </div>
+
+                <table class="table responsive  no-tab text-center" id="table_hotel">
+                    <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Nom</th>
+                        <th>Jours</th>
+                        <th>Informations</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <td>
+                            #1
+                        </td>
+                        <td>
+                            Hotel Villa San Pio
+                        </td>
+                        <td>
+                            12
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-info">Voir</a>
+                            5 <i class="fa fa-arrow-up text-success"></i>
+                            0 <i class="fa fa-arrow-down text-danger"></i>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <script type="application/javascript">
+                    $(document).ready(function () {
+                        $('#table_hotel').DataTable({
+                            "searching": false,
+                            "order": [[0, "asc"]],
+
+                            "language": {
+                                "lengthMenu": "_MENU_ par page",
+                                "zeroRecords": "Aucune donnée",
+                                "info": "Page _PAGE_ sur_PAGES_",
+                                "search": "Recherche",
+                                "infoEmpty": "Aucune donnée",
+                                "infoFiltered": "(Filtré depuis _MAX_ entrée)",
+                                "paginate": {
+                                    "previous": "Précédent",
+                                    "next": "Suivant"
+                                }
+                            }
+                        });
+                    });
+
+                </script>
+
+
+            </div>
         </div>
     </div>
 </div>
