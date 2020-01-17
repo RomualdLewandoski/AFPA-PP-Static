@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body"><h4 class="mt-0 header-title mb-4">Liste des participants</h4>
 
-                <table class="table responsive  no-tab text-center" id="table_user">
+                <table class="table table-responsive  no-tab text-center" id="table_user">
                     <thead>
                     <tr>
                         <th>#ID</th>
@@ -30,6 +30,12 @@
                         </td>
                         <td>
                             Créateur du projet
+                            <input type="hidden" name="userId" value="#id">
+                            <select class="form-control " name="userPerms" >
+                                <option value="2" selected>Créateur du projet</option>
+                                <option value="1" >Administrateur du projet</option>
+                                <option value="0" >Membre du projet</option>
+                            </select>
                         </td>
                         <td>
                             <button type="button" class="btn btn-success waves-effect waves-light">Editer

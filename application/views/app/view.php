@@ -182,7 +182,7 @@
                             </div>
 
                         </div><!-- /.modal-content --></div><!-- /.modal-dialog --></div>
-                <table class="table responsive  no-tab text-center" id="table_activity">
+                <table class="table table-responsive  no-tab text-center" id="table_activity">
                     <thead>
                     <tr>
                         <th>#ID</th>
@@ -416,7 +416,7 @@
                             </div>
 
                         </div><!-- /.modal-content --></div><!-- /.modal-dialog --></div>
-                <table class="table responsive  no-tab text-center" id="table_hotel">
+                <table class="table table-responsive  no-tab text-center" id="table_hotel">
                     <thead>
                     <tr>
                         <th>#ID</th>
