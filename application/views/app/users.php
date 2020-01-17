@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body"><h4 class="mt-0 header-title mb-4">Liste des participants</h4>
 
-                <table class="table table-responsive  no-tab text-center" id="table_user">
+                <table class="table table-responsive-md no-tab text-center" id="table_user">
                     <thead>
                     <tr>
                         <th>#ID</th>
