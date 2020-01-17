@@ -3681,3 +3681,13 @@ a.faq[data-toggle=collapse]:before {
 .dataTables_length .custom-select {
  width: auto!important;
 }
+
+.dataTables_filter{
+    float: right;
+    display: inline-block!important;
+}
+.dataTables_filter .form-control{
+    width: auto!important;
+    display: inline-block!important;
+    margin-left: 10px;
+}

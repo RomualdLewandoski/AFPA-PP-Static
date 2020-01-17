@@ -147,6 +147,31 @@
                                     </div>
                                 </div>
 
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Numéro de rue</label>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" type="number"
+                                               placeholder=""
+                                               name="activityStreetNumber">
+                                    </div>
+                                    <label class="col-sm-1 col-form-label">Rue</label>
+                                    <div class="col-sm-7">
+                                        <input class="form-control" type="text" name="activityStreetName">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Code postal</label>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" type="number"
+                                               placeholder=""
+                                               name="activityZipCode">
+                                    </div>
+                                    <label class="col-sm-1 col-form-label">Ville</label>
+                                    <div class="col-sm-7">
+                                        <input class="form-control" type="text" name="activityCity">
+                                    </div>
+                                </div>
+
                                 <div align="center">
                                     <button class="btn btn-success" type="submit"><i class="fa fa-plus"></i> Soumettre
                                     </button>
@@ -198,16 +223,71 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                             </div>
                             <div class="modal-body">
-                                <strong><u>Nom :</u></strong> Visite de la maison de Rocco <br>
-                                <strong><u>Durée :</u></strong> 1 jour<br>
-                                <strong><u>Prix :</u></strong> *premium*<br>
-                                <strong><u>Description :</u></strong> La maison de Rocco est le lieu de référence de la
-                                saucisse il faut absolument y allez.
-                                <hr>
-                                <div align="center">
-                                    <button class="btn btn-success"><i class="fa fa-thumbs-up"></i> 5 Pour</button>
-                                    <button class="btn btn-danger"><i class="fa fa-thumbs-down"></i> 0 Contre</button>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Visite de la maison de roco<br><br>
+                                            <i class="fa fa-calendar-day"></i> 1 Jour<br><br>
+                                            <i class="fa fa-dollar-sign"></i> <i>Fonction prémium</i><br>
+                                        </h4>
+                                        <hr>
+                                        <div align="center">
+                                            <button class="btn btn-success"><i class="fa fa-thumbs-up"></i> 5 Pour
+                                            </button>
+                                            <button class="btn btn-danger"><i class="fa fa-thumbs-down"></i> 0 Contre
+                                            </button>
 
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="mapid" style="width: 100%; height: 380px; position: relative;"></div>
+                                        <script>
+                                            setTimeout(function () {
+                                                map.invalidateSize()
+                                            }, 500);
+                                            $("#activity1").on('shown.bs.modal', function () {
+                                                var mymap = L.map('mapid').setView([50.44269, 2.82950], 18);
+                                                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGF6aWVsa2FvcyIsImEiOiJjazVodHd0YmMwNno5M2xzY3FyM2dhbDdjIn0.GfeDxa9VznsPiTuKIqXF1A', {
+                                                    maxZoom: 18,
+                                                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                                                        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                                                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                                                    id: 'mapbox/satellite-v9'
+                                                }).addTo(mymap);
+                                                var marker = L.marker([50.44269, 2.82950]).addTo(mymap);
+                                                var popup = L.popup()
+                                                    .setLatLng([50.44289, 2.82950])
+                                                    .setContent("Adresse a afficher")
+                                                    .openOn(mymap);
+                                                //add 0.0002 on Z for the popup
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>Description:</h4><br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada
+                                        ligula velit, vel malesuada ex aliquet mollis. Nunc consequat sapien eget
+                                        tincidunt porta. Pellentesque accumsan ipsum sed augue tincidunt viverra. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in lectus justo.
+                                        Quisque suscipit, orci in convallis ultricies, nisi nisi tempor nisl, ac
+                                        tristique lacus enim id diam. Quisque sit amet diam dolor. Proin fermentum
+                                        tempor tortor, porttitor mattis arcu. In vehicula scelerisque accumsan. Morbi in
+                                        convallis leo. Mauris tincidunt, leo eget consequat bibendum, mi ligula tempor
+                                        nunc, et tempus dui ligula at enim. Nulla venenatis luctus finibus. Mauris
+                                        pulvinar, lorem id condimentum condimentum, massa neque fringilla massa, ut
+                                        viverra mi lorem vitae nulla.
+
+                                        Sed mi lectus, commodo in hendrerit posuere, mollis eget mauris. Ut ultrices,
+                                        felis eu pretium congue, turpis lacus imperdiet ipsum, ac luctus mi enim in mi.
+                                        Sed vitae nibh tortor. Proin eget sollicitudin orci, a iaculis sem. Pellentesque
+                                        turpis felis, auctor ut dictum at, mollis a dolor. Donec mollis mi nunc, ut
+                                        varius lorem facilisis nec. Mauris venenatis justo quam, sed placerat magna
+                                        aliquet interdum. Cras non vulputate lacus, at vestibulum purus. Etiam erat dui,
+                                        rhoncus non risus in, tincidunt commodo eros. Maecenas luctus feugiat
+                                        sollicitudin.
+                                    </div>
                                 </div>
                             </div>
 
@@ -301,40 +381,30 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Image</label>
-                                    <div class="col-sm-10">
-                                        <input class="form-control" type="text" placeholder="lien image http://monsite.xyz/monimage.png|.jpg"
-                                               name="hotelImage">
+                                    <label class="col-sm-2 col-form-label">Numéro de rue</label>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" type="number"
+                                               placeholder=""
+                                               name="hotelStreetNumber">
+                                    </div>
+                                    <label class="col-sm-1 col-form-label">Rue</label>
+                                    <div class="col-sm-7">
+                                        <input class="form-control" type="text" name="hotelStreetName">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Code postal</label>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" type="number"
+                                               placeholder=""
+                                               name="hotelZipCode">
+                                    </div>
+                                    <label class="col-sm-1 col-form-label">Ville</label>
+                                    <div class="col-sm-7">
+                                        <input class="form-control" type="text" name="hotelCity">
                                     </div>
                                 </div>
 
-                                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-                                      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-                                      crossorigin=""/>
-                                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-                                        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-                                        crossorigin=""></script>
-                                <div id="mapid" style="height: 280px;"></div>
-
-                                <script>
-
-                                    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-
-
-                                    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-                                        maxZoom: 18,
-                                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                                            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                                            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                                        id: 'mapbox/streets-v11'
-                                    }).addTo(mymap);
-
-
-
-
-
-
-                                </script>
 
                                 <div align="center">
                                     <button class="btn btn-success" type="submit"><i class="fa fa-plus"></i> Soumettre
@@ -389,16 +459,72 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                             </div>
                             <div class="modal-body">
-                                <strong><u>Nom :</u></strong> Visite de la maison de Rocco <br>
-                                <strong><u>Durée :</u></strong> 1 jour<br>
-                                <strong><u>Prix :</u></strong> *premium*<br>
-                                <strong><u>Description :</u></strong> La maison de Rocco est le lieu de référence de la
-                                saucisse il faut absolument y allez.
-                                <hr>
-                                <div align="center">
-                                    <button class="btn btn-success"><i class="fa fa-thumbs-up"></i> 5 Pour</button>
-                                    <button class="btn btn-danger"><i class="fa fa-thumbs-down"></i> 0 Contre</button>
 
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Visite de la maison de roco<br><br>
+                                            <i class="fa fa-calendar-day"></i> 1 Jour<br><br>
+                                            <i class="fa fa-dollar-sign"></i> <i>Fonction prémium</i><br>
+                                        </h4>
+                                        <hr>
+                                        <div align="center">
+                                            <button class="btn btn-success"><i class="fa fa-thumbs-up"></i> 5 Pour
+                                            </button>
+                                            <button class="btn btn-danger"><i class="fa fa-thumbs-down"></i> 0 Contre
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="mapid2" style="width: 100%; height: 380px; position: relative;"></div>
+                                        <script>
+                                            setTimeout(function () {
+                                                map.invalidateSize()
+                                            }, 500);
+                                            $("#hotel1").on('shown.bs.modal', function () {
+                                                var mymap2 = L.map('mapid2').setView([50.44269, 2.82950], 18);
+                                                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGF6aWVsa2FvcyIsImEiOiJjazVodHd0YmMwNno5M2xzY3FyM2dhbDdjIn0.GfeDxa9VznsPiTuKIqXF1A', {
+                                                    maxZoom: 18,
+                                                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                                                        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                                                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                                                    id: 'mapbox/satellite-v9'
+                                                }).addTo(mymap2);
+                                                var marker = L.marker([50.44269, 2.82950]).addTo(mymap2);
+                                                var popup = L.popup()
+                                                    .setLatLng([50.44289, 2.82950])
+                                                    .setContent("Adresse a afficher")
+                                                    .openOn(mymap2);
+                                                //add 0.0002 on Z for the popup
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>Description:</h4><br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada
+                                        ligula velit, vel malesuada ex aliquet mollis. Nunc consequat sapien eget
+                                        tincidunt porta. Pellentesque accumsan ipsum sed augue tincidunt viverra. Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in lectus justo.
+                                        Quisque suscipit, orci in convallis ultricies, nisi nisi tempor nisl, ac
+                                        tristique lacus enim id diam. Quisque sit amet diam dolor. Proin fermentum
+                                        tempor tortor, porttitor mattis arcu. In vehicula scelerisque accumsan. Morbi in
+                                        convallis leo. Mauris tincidunt, leo eget consequat bibendum, mi ligula tempor
+                                        nunc, et tempus dui ligula at enim. Nulla venenatis luctus finibus. Mauris
+                                        pulvinar, lorem id condimentum condimentum, massa neque fringilla massa, ut
+                                        viverra mi lorem vitae nulla.
+
+                                        Sed mi lectus, commodo in hendrerit posuere, mollis eget mauris. Ut ultrices,
+                                        felis eu pretium congue, turpis lacus imperdiet ipsum, ac luctus mi enim in mi.
+                                        Sed vitae nibh tortor. Proin eget sollicitudin orci, a iaculis sem. Pellentesque
+                                        turpis felis, auctor ut dictum at, mollis a dolor. Donec mollis mi nunc, ut
+                                        varius lorem facilisis nec. Mauris venenatis justo quam, sed placerat magna
+                                        aliquet interdum. Cras non vulputate lacus, at vestibulum purus. Etiam erat dui,
+                                        rhoncus non risus in, tincidunt commodo eros. Maecenas luctus feugiat
+                                        sollicitudin.
+                                    </div>
                                 </div>
                             </div>
 

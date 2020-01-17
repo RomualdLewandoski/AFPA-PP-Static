@@ -51,7 +51,7 @@ class App extends CI_Controller
         if ($id == 1 ){
             $data['premium'] = true;
         }else if ($id == "tuto"){
-            $data['premium'] = false;
+            $data['premium'] = true;
         }else{
             $data['premium'] = false;
         }
@@ -63,13 +63,13 @@ class App extends CI_Controller
         $this->load->view("app/foot");
     }
 
-    public function projectUser($id = false){
+    public function memberProject($id = false){
         $data['project'] = true;
         $data['id'] = $id;
         if ($id == 1 ){
             $data['premium'] = true;
         }else if ($id == "tuto"){
-            $data['premium'] = false;
+            $data['premium'] = true;
         }else{
             $data['premium'] = false;
         }
@@ -77,7 +77,7 @@ class App extends CI_Controller
         $this->load->view("app/nav");
         $this->load->view("app/left", $data);
         $this->load->view("app/pagetop");
-        //$this->load->view("app/view");
+        $this->load->view("app/users");
         $this->load->view("app/foot");
     }
 }

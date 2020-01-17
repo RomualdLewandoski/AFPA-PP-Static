@@ -1,5 +1,5 @@
 var opt = {
-    'tourTitle': 'Tour Title Default',
+    'tourTitle': 'Prise en main',
     'intro': {
         'title': 'Bienvenue dans la visite guidée',
         'content': 'Ce tutoriel vous apprendra les fonctionnalités de bases',
