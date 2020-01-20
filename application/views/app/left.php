@@ -29,17 +29,17 @@
                             <span>Aperçu</span>
                         </a>
 
-                        <a href="/app/users/<?php echo $id;?>" class="waves-effect">
+                        <a href="/app/users/<?php echo $id;?>" class="waves-effect" id="participants">
                             <i class="fa fa-user"></i>
                             <span>Participants</span>
                         </a>
 
-                        <a href="/app/activity/<?php echo $id;?>" class="waves-effect">
+                        <a href="/app/activity/<?php echo $id;?>" class="waves-effect" id="myActivity">
                             <i class="fa fa-snowboarding"></i>
                             <span>Activité</span>
                         </a>
 
-                        <a href="/app/hostel/<?php echo $id;?>" class="waves-effect">
+                        <a href="/app/hotel/<?php echo $id;?>" class="waves-effect">
                             <i class="fa fa-hotel"></i>
                             <span>Hôtel</span>
                         </a>

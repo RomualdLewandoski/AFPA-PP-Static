@@ -85,6 +85,58 @@ var opt = {
             'target': '#hotel',
             'loc' : '/app/view/tuto',
             'timer': '6000'
+        },{
+            'title': "Gestion des participants",
+            'content': "Cette section permet de gérer les participants, les inviter, leur ajouter des droits et les retirer du projet",
+            'target': '#participants',
+            'loc' : "/app/users/tuto",
+            'timer': '6000'
+        },{
+            'title': 'Liste des participants',
+            'content': "Depuis ce tableau vous pouvez gérer les droits de chaque participant",
+            'target': "#participantsTable",
+            'loc' : "/app/users/tuto",
+            'timer':'6000'
+        },{
+            'title': "Droits des participants",
+            "content": "Vous pouvez définir 2 types de droits <br><" +
+                "ul>" +
+                "<li>Administrateur: Ils peuvent inviter des membres, supprimer des membres et valider les activitées/hôtels</li>" +
+                "<li>Membres du projet: Ils peuvent soumettre les activitées/hôtels</li>" +
+                "</ul>",
+            'target' : "#selectPerms",
+            'loc' : "/app/users/tuto",
+            'timer':'6000'
+        },{
+            'title': "N'oubliez pas de valider",
+            "content": "Vous devez valider les changement pour qu'ils prennent effet, pour cela il suffit de cliquer sur le bouton Editer",
+            'target' : "#edit",
+            'loc' : "/app/users/tuto",
+            'timer':'6000'
+        },{
+            'title': "Inviter des participants",
+            "content": "Depuis ce bouton vous pourrez récupérer un lien d'invitation ou envoyer des emails d'invitation ",
+            'target' : "#addUser",
+            'loc' : "/app/users/tuto",
+            'timer':'6000'
+        }, {
+            'title':"Gestion des activitées",
+            "content": "Depuis cette page vous pouvez gérer les activitées en proposition et retenues",
+            'target' : "#myActivity",
+            'loc' : "/app/activity/tuto",
+            'timer':'6000'
+        }, {
+            'title' : "Activités en attente",
+            'content': "Vous trouverez ici les activités en cours de vote",
+            'target' : '#activityPending',
+            'loc': "/app/activity/tuto",
+            'timer': '6000'
+        },{
+            'title' : "Activités approuvées",
+            "content": "Ici ce trouve les activités votées et approuvées, vous ouvez consulter la fiche d'activité et rremettre au vote <strong>ATTENTION cela supprimera les votes sur cette activité</strong>",
+            'target' : "#choosenActivity",
+            'loc' : "/app/activity/tuto",
+            'timer':'6000'
         }
 
 
