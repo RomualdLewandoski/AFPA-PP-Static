@@ -10,7 +10,7 @@
                     <h5 class="font-500">du 20/01/2020 <br>au 02/02/2020</h5>
                 </div>
                 <div class="pt-2">
-                    <a href="#" class="text-white-50">
+                    <a href="/app/date/<?php echo $id;?>" class="text-white-50">
                         <div class="float-right">
                             <i class="mdi mdi-arrow-right h5"></i>
                         </div>
@@ -30,7 +30,7 @@
                     <h5 class="font-500">1 / 3<br><br></h5>
                 </div>
                 <div class="pt-2">
-                    <a href="#" class="text-white-50">
+                    <a href="/app/users/<?php echo $id;?>" class="text-white-50">
                         <div class="float-right">
                             <i class="mdi mdi-arrow-right h5"></i>
                         </div>
@@ -50,7 +50,7 @@
                     <h5 class="font-500">**Fonction PREMIUM**<br><br></h5>
                 </div>
                 <div class="pt-2">
-                    <a href="#" class="text-white-50">
+                    <a href="/app/wallet/<?php echo $id;?>" class="text-white-50">
                         <div class="float-right">
                             <i class="mdi mdi-arrow-right h5"></i>
                         </div>
@@ -70,7 +70,7 @@
                     <h5 class="font-500">Hotel : 1<br> Activitées : 10<br></h5>
                 </div>
                 <div class="pt-2">
-                    <a href="#" class="text-white-50">
+                    <a href="/app/activity/<?php echo $id;?>" class="text-white-50">
                         <div class="float-right">
                             <i class="mdi mdi-arrow-right h5"></i>
                         </div>

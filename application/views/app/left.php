@@ -29,6 +29,11 @@
                             <span>Aperçu</span>
                         </a>
 
+                        <a href="/app/date/<?php echo $id;?>" class="waves-effect" id="dateProject">
+                            <i class="fa fa-calendar"></i>
+                            <span>Dates</span>
+                        </a>
+
                         <a href="/app/users/<?php echo $id;?>" class="waves-effect" id="participants">
                             <i class="fa fa-user"></i>
                             <span>Participants</span>
