@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
+$route['app/settings/(:any)'] = 'app/settingsProject/$1';
 $route['app/hotel/(:any)'] = 'app/hotelProject/$1';
 $route['app/activity/(:any)'] = 'app/activityProject/$1';
 $route['app/users/(:any)'] = 'app/memberProject/$1';

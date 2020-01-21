@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .userblock {
+            float: left;
+            clear: both;
+            width: 100%;
+            margin: 26px 0 0 0%;
+            padding-bottom: 10px;
+        }
+
+        .userblocleft1 {
+            float: left;
+            width: 100%;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgb(49, 61, 70);
+        }
+
+        .userleft {
+            float: left;
+            width: 34.0292275574%;
+            padding-bottom: 20px;
+            background-color: rgba(35, 43, 51, 0.52);
+        }
+
+        .username {
+            padding-top: 10px;
+            float: left;
+            width: 100%;
+            height: 50px;
+        }
+
+
+        .userright {
+            float: left;
+            width: 65.8663883089%;
+            height: auto;
+            min-height: 200px;
+
+            background-color: rgba(35, 43, 51, 0.52);
+        }
+
+        .userskin {
+            float: left;
+            clear: both;
+            width: 78.5276073619%;
+            margin: 12px 0 0 9.9932898773%;
+        }
+
+        .skin {
+            display: block;
+            float: left;
+            width: 62.109375%;
+            height: auto;
+            margin-left: 15.7959%;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="row">
+
+
+    <div class="userblock clearfix">
+        <div class="userleft clearfix">
+            <div class="userblocleft1 clearfix">
+                <div class="username">
+                    <h1><?php echo $user->pseudo; ?></h1>
+                </div>
+                <div class="userskin clearfix">
+                    <img class="skin"
+                         src="skinModel.php?vr=-25&hr=-25&hrh=10&vrla=5&vrra=-2&vrll=-20&vrrl=2&ratio=12&format=png&displayHair=true&headOnly=false&user=<?php echo $user->pseudo; ?>">
+                </div>
+            </div>
+        </div>
+
+        <div class="userright">
+            <div id="profil" align="left">
+                <div class="nk-gap-3"></div>
+                <div class="talk-bubble tri-right left-in">
+                    <div class="talktext">
+                        <?php echo $user->statut; ?>
+                    </div>
+                </div>
+                <div class="userform">
+                    <?php
+                                echo form_open('updateStatut');
+                                ?>
+                    <script src="ckeditorlte/ckeditor.js" type="text/javascript"></script>
+                    <textarea id="statutEdit" name="statutEdit"
+                              rows="2"><?php echo $user->statut; ?></textarea>
+
+                    <br>
+                    <center>
+                        <input class="respo" type="submit" value="Mettre a jour le statut">
+                    </center>
+                    </form>
+                </div>
+                <hr>
+                <div class="userform">
+                    <center>
+                        <?php echo form_open_multipart("/user/upload"); ?>
+                        <input class="respo" type="file" id="userfile" name="userfile" size="20"><br><br>
+                        <input class="respo" type="submit" value="Mettre a jour le skin">
+                        <?php echo form_close(); ?>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

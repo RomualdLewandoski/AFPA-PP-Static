@@ -39,7 +39,7 @@
                             <span>Activité</span>
                         </a>
 
-                        <a href="/app/hotel/<?php echo $id;?>" class="waves-effect">
+                        <a href="/app/hotel/<?php echo $id;?>" class="waves-effect" id="myHotel">
                             <i class="fa fa-hotel"></i>
                             <span>Hôtel</span>
                         </a>
@@ -54,7 +54,7 @@
                         ?>
 
 
-                        <a href="/app/settings/<?php echo $id;?>" class="waves-effect">
+                        <a href="/app/settings/<?php echo $id;?>" class="waves-effect" id="projectSettings">
                             <i class="fa fa-cogs"></i>
                             <span>Paramètres</span>
                         </a>
