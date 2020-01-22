@@ -10,7 +10,9 @@
                             class="nav-link waves-effect" href="#" id="btn-theme"><i
                                 class="fa fa-moon"></i></a></li>
                 <!-- notification -->
-                <li class="dropdown notification-list list-inline-item"><a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                <li class="dropdown notification-list list-inline-item"><a
+                            class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
                         <i class="mdi mdi-bell-outline noti-icon"></i>
                         <span class="badge badge-pill badge-danger noti-icon-badge">3</span></a>
 
@@ -49,22 +51,40 @@
                                 </p>
                             </a>
                         </div>
-                        <!-- All--><a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all <i
+                        <!-- All--><a href="javascript:void(0);" class="dropdown-item text-center text-primary">View all
+                            <i
                                     class="fi-arrow-right"></i></a></div>
                 </li>
                 <li class="dropdown notification-list list-inline-item">
                     <div class="dropdown notification-list nav-pro-img">
-                        <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                            <img src="/assets/img/profile.png" alt="user" class="rounded-circle"></a>
+                        <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown"
+                           href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <?php
+                            function get_gravatar($email, $s = 80, $d = 'mp', $r = 'g', $img = false, $atts = array())
+                            {
+                                $url = 'https://www.gravatar.com/avatar/';
+                                $url .= md5(strtolower(trim($email)));
+                                $url .= "?s=$s&d=$d&r=$r";
+                                if ($img) {
+                                    $url = '<img src="' . $url . '"';
+                                    foreach ($atts as $key => $val)
+                                        $url .= ' ' . $key . '="' . $val . '"';
+                                    $url .= ' />';
+                                }
+                                return $url;
+                            }
+
+                            ?>
+                            <img src="<?php echo get_gravatar("mineswordcraft@gmail.com"); ?>" alt="user"
+                                 class="rounded-circle"></a>
                         <div class="dropdown-menu dropdown-menu-right profile-dropdown">
-                            <!-- item--><a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
-                            <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a> <a class="dropdown-item d-block" href="#"><span
-                                        class="badge badge-success float-right">11</span><i
-                                        class="mdi mdi-settings m-r-5"></i> Settings</a> <a class="dropdown-item" href="#"><i
-                                        class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
+                            <a class="dropdown-item" href="/app/me"><i class="mdi mdi-account-circle m-r-5"></i>
+                                Profile</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i>
-                                Logout</a></div>
+                            <a class="dropdown-item text-danger" href="#">
+                                <i class="mdi mdi-power text-danger"></i> Logout
+                            </a>
+                        </div>
                     </div>
                 </li>
             </ul>

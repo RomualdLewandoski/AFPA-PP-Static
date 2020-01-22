@@ -98,7 +98,7 @@
         </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-3" id="dateChosen">
         <div class="card mini-stat bg-primary text-white">
             <div class="card-body">
                 <div class="mb-4">

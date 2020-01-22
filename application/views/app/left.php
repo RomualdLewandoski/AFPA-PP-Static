@@ -51,7 +51,7 @@
 
                         <?php
                         if ($premium){?>
-                            <a href="/app/wallet/<?php echo $id;?>" class="waves-effect">
+                            <a href="/app/wallet/<?php echo $id;?>" class="waves-effect" id="walletProject">
                                 <i class="fa fa-chart-line"></i>
                                 <span>Budget</span>
                             </a>

@@ -25,6 +25,17 @@ class App extends CI_Controller
         $this->load->view("app/foot");
     }
 
+    public function profile()
+    {
+        $data['project'] = false;
+        $this->load->view("app/head");
+        $this->load->view("app/nav");
+        $this->load->view("app/left", $data);
+        $this->load->view("app/pagetop");
+        $this->load->view("app/profile");
+        $this->load->view("app/foot");
+    }
+
     public function createProject(){
         $data['project'] = false;
         $this->load->view("app/head");
@@ -152,5 +163,27 @@ class App extends CI_Controller
         $this->load->view("app/pagetop");
         $this->load->view("app/date");
         $this->load->view("app/foot");
+    }
+
+    public function walletProject($id = false){
+        $data['project'] = true;
+        $data['id'] = $id;
+        if ($id == 1 ){
+            $data['premium'] = true;
+        }else if ($id == "tuto"){
+            $data['premium'] = true;
+        }else{
+            $data['premium'] = false;
+        }
+        $this->load->view("app/head");
+        $this->load->view("app/nav");
+        $this->load->view("app/left", $data);
+        $this->load->view("app/pagetop");
+        $this->load->view("app/wallet");
+        $this->load->view("app/foot");
+    }
+
+    public function join($url = false){
+        $this->load->view('app/invite');
     }
 }

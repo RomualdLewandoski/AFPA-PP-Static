@@ -85,6 +85,25 @@ var opt = {
             'target': '#hotel',
             'loc': '/app/view/tuto',
             'timer': '6000'
+        },
+        {
+            'title': "Gestion des dates",
+            'content': "Cette section vous permet de gérer les dates du voyage",
+            'target': "#dateProject",
+            'loc': "/app/date/tuto",
+            'timer': "6000"
+        }, {
+            'title': "Dates en vote",
+            'content': "Ici ce trouve les dates en cours de vote, vous pouvez proposer d'autres dates et voter pour la date a choisir",
+            'target': "#datePending",
+            'loc': "/app/date/tuto",
+            'timer': "6000"
+        }, {
+            'title': "Dates retenues",
+            'content': "Ici s'affiche les dates retenue vous pourrez les remettre au vote",
+            'target': "#dateChosen",
+            'loc': "/app/date/tuto",
+            'timer': "6000"
         }, {
             'title': "Gestion des participants",
             'content': "Cette section permet de gérer les participants, les inviter, leur ajouter des droits et les retirer du projet",
@@ -156,7 +175,26 @@ var opt = {
             'loc': '/app/hotel/tuto',
             'timer': "6000"
         },
-        /*TODO BUDGET GOES HERE*/
+        {
+            'title': "Gestion du budget [PREMIUM] ",
+            'content': "Depuis cette page vous pouvez gérer le budget alloué au projet",
+            'target': "#walletProject",
+            'loc': '/app/wallet/tuto',
+            'timer': "6000"
+        }, {
+            'title': "Liste des participations",
+            'content': "Ici s'affiche les membres participants financièrement au projet, vous pouvez utiliser le bouton ajouter pour rajouter une somme a votre projet",
+            'target': "#wallet_list",
+            'loc': '/app/wallet/tuto',
+            'timer': "6000",
+
+        }, {
+            'title': "Budget",
+            'content': "Voici le graphique représentant le budget , vous y trouverez les dépenses des activitées, des hotels et le montant restant disponnible",
+            'target': "#wallet",
+            'loc': "/app/wallet/tuto",
+            'timer': "6000"
+        },
         {
             'title': "Paramètres du projet",
             'content': "Depuis cette page vous pouvez mettre a jour votre projet, ou le supprimer",
@@ -164,23 +202,23 @@ var opt = {
             'loc': '/app/settings/tuto',
             'timer': "6000"
         }, {
-            'title' : "Modifiez vos informations",
+            'title': "Modifiez vos informations",
             'content': "Depuis cette partie vous pouvez gérer le nom de votre projet sa description et copier le lien d'invitation",
-            'target' : "#settings",
-            'loc' : '/app/settings/tuto',
-            'timer' : "6000"
+            'target': "#settings",
+            'loc': '/app/settings/tuto',
+            'timer': "6000"
         }, {
-            'title' : "Nouveau lien",
+            'title': "Nouveau lien",
             'content': "En cliquant sur ce obuton vous allez générer un nouveau lien d'invitation cependant les liens déjà envoyé ne serront plus valide",
-            'target' : "#newKeyProject",
-            'loc' : '/app/settings/tuto',
-            'timer' : "6000"
+            'target': "#newKeyProject",
+            'loc': '/app/settings/tuto',
+            'timer': "6000"
         }, {
-            'title' : "Terminer un projet",
-            'content': "En cliquant ici le projet serra effacé définitivement) nous n'aurons aucun moyen de restaurer les informations le concernant, utilisez ce bouton avec précaution",
+            'title': "Terminer un projet",
+            'content': "En cliquant ici le projet serra effacé (définitivement) nous n'aurons aucun moyen de restaurer les informations le concernant, utilisez ce bouton avec précaution",
             'target': "#deleteProject",
-            'loc' : "/app/settings/tuto",
-            'timer' : "6000"
+            'loc': "/app/settings/tuto",
+            'timer': "6000"
         }
 
 
