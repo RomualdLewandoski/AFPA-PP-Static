@@ -32,7 +32,7 @@
                     <label class="col-sm-2 col-form-label">Lien d'invitation</label>
                     <div class="col-sm-9">
                         <input class="form-control" id="privateKey" name="privateKey"
-                               value="https://moonly.fr/ivite/xa4894Zhbnf=" readonly="readonly">
+                               value="https://moonly.fr/invite/xa4894Zhbnf=" readonly="readonly">
                     </div>
                     <div class="col-md-1">
                         <button id="copy" class="btn btn-sm btn-primary" type="button">Copier</button>
