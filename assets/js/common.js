@@ -5,25 +5,22 @@ $(document).ready(function () {
     const page = $(location).attr('pathname');
 
     /** FRONT NAVBAR EDITOR */
-    if (frontpages!= null) {
+    if (frontpages != null) {
         var token = localStorage.getItem('token');
-        if (token != null){
-            //todo ici on va send le token a l'api pour vérifier sa validitée 2 retour possible true / false
-            //si true on change l'attribut href de connexion en acces a l'app et on change le texte en Acces membre au lieu de Inscription/Connexion
+        if (token != null) {
             $.post(
-              apiUrl+'api/token',
+                apiUrl + 'api/token',
                 {
-                    token : localStorage.getItem('token')
+                    token: localStorage.getItem('token')
                 },
                 function (data) {
                     var obj = JSON.parse(data);
                     console.log(obj);
-                    if (obj.state == true){
-                        console.log("yup");
-                     $("#loginNav").attr("href", "/app");
-                     console.log("yup2");
+                    if (obj.state == true) {
+                        $("#loginNav").attr("href", "/app");
+                        $("#loginNavMobile").attr("href", "/app");
                         $("#loginNav").text('Accès application')
-                        console.log("yup3");
+                        $("#loginNavMobile").text('Accès application')
                     }
                 },
                 'text'

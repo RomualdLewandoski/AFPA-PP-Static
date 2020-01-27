@@ -24,7 +24,7 @@
                             <a class="py-2 nav-link" href="./#about">A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="py-2 nav-link  " href="/login" id="loginNav">Inscription / Connexion</a>
+                            <a class="py-2 nav-link  " href="/login" id="loginNavMobile">Inscription / Connexion</a>
                         </li>
                     </ul>
                     <!-- Links -->
@@ -42,7 +42,7 @@
                 <a class="py-2 d-none d-lg-inline-block " href="./#price">Prix</a>
                 <a class="py-2 d-none d-lg-inline-block " href="./#talking">Retours clients</a>
                 <a class="py-2 d-none d-lg-inline-block " href="./#about">A propos</a>
-                <a class="py-2 d-none d-lg-inline-block " href="/login">Inscription / Connexion</a>
+                <a class="py-2 d-none d-lg-inline-block " href="/login" id="loginNav">Inscription / Connexion</a>
             </div>
         </div>
 
