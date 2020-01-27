@@ -92,20 +92,22 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var link = $("link.theme");
-    if ($.cookie("css")) {
-        link.attr("href", $.cookie("css"));
+    var theme = localStorage.getItem("theme");
+    if (theme!= null){
+        link.attr("href", theme);
     }
     $('#btn-theme').click(function () {
         event.preventDefault();
         var themed = link.attr("href");
         var light = "/assets/css/light.css";
         var black = "/assets/css/dark.css"
+
         if (themed == light) {
             link.attr("href", black);
         } else {
             link.attr("href", light);
         }
-        $.cookie("css", link.attr('href'), {expires: 365, path: '/'});
+        localStorage.setItem("theme", link.attr("href"));
     });
 });
 

@@ -9,14 +9,13 @@
     <meta content="Romuald Detrait" name="author">
 
     <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/cookie.js"></script>
-
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
     <script>
-        if ($.cookie("css")) {
-            $('head').append('<link href="' + $.cookie("css") + '" rel="stylesheet" type="text/css" class="theme">');
+        var theme = localStorage.getItem("theme");
+        if (theme != null) {
+            $('head').append('<link href="' + theme + '" rel="stylesheet" type="text/css" class="theme">');
         } else {
             $('head').append('<link href="/assets/css/light.css" rel="stylesheet" type="text/css" class="theme">');
         }

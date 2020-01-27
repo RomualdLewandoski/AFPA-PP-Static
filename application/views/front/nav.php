@@ -1,4 +1,4 @@
-<nav class="site-header fixed-top py-1 navbar ">
+<nav class="site-header fixed-top py-1 navbar " id="frontPage">
     <div class="container-fluid">
         <div class="row w-100">
             <div class="col-12 col-md-2">
@@ -24,7 +24,7 @@
                             <a class="py-2 nav-link" href="./#about">A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="py-2 nav-link  " href="/login">Inscription / Connexion</a>
+                            <a class="py-2 nav-link  " href="/login" id="loginNav">Inscription / Connexion</a>
                         </li>
                     </ul>
                     <!-- Links -->

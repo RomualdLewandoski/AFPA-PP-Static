@@ -8,6 +8,10 @@
                 </a>
             </div>
         </div>
+        <div class="alert alert-danger fade show" role="alert" id="errorAjax" hidden>
+
+            <span id="errorAjaxTxt"> </span>
+        </div>
         <div class="row h-90 align-items-center justify-content-center text-center">
             <div class="row">
                 <div class="col-sm-5">
@@ -21,7 +25,7 @@
                             </div>
                         </div>
                         <div class="form-bottom">
-                            <form role="form" action="" method="post" class="login-form">
+                            <form role="form" action="" method="post" class="login-form" id="loginForm">
                                 <div class="form-group">
                                     <label class="sr-only" for="loginEmail">Email</label>
                                     <input type="text" name="loginEmail" placeholder="email"
@@ -69,7 +73,7 @@
                             </div>
                         </div>
                         <div class="form-bottom">
-                            <form role="form" action="" method="post" class="registration-form">
+                            <form role="form" action="" method="post" class="registration-form" id="registerForm">
                                 <div class="form-group">
                                     <label class="sr-only" for="registerFirstName">Prénom</label>
                                     <input type="text" name="registerFirstName" placeholder="John"
@@ -100,7 +104,7 @@
                                 <div class="g-recaptcha" data-sitekey="6LfW180UAAAAAGdu8ZRqBhDmbYc2yPSdRkqN-nRL"></div>
 
                                 <br>
-                                <button type="submit" class="btn btn-primary">Inscription</button>
+                                <button type="submit" class="btn btn-primary" id="register">Inscription</button>
                             </form>
                         </div>
                     </div>
@@ -110,3 +114,4 @@
         </div>
     </div>
 </header>
+
