@@ -1,6 +1,6 @@
 <div id="wrapper">
     <!-- Top Bar Start -->
-    <div class="topbar">
+    <div class="topbar" id="app_pages">
         <!-- LOGO -->
         <div class="topbar-left"><a href="/app" class="logo text-white">MOONLY</a></div>
         <nav class="navbar-custom">

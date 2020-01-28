@@ -7,7 +7,7 @@
                 <hr class="divider my-4">
             </div>
             <div class="col-lg-8 align-self-baseline">
-                <p class="text-white-75 font-weight-light mb-5">Votre voyage commence maintenant</p>
+                <p class="text-white-75 font-weight-light mb-5" id="subtitle"></p>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#features">En savoir plus</a>
             </div>
         </div>
