@@ -19,3 +19,4 @@
 </head>
 
 <body>
+<div id="page" data-page="<?php echo $page;?>"></div>

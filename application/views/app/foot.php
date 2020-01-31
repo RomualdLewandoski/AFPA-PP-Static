@@ -8,7 +8,6 @@
 </div><!-- ============================================================== --><!-- End Right content here -->
 <!-- ============================================================== --></div><!-- END wrapper --><!-- jQuery  -->
 
-<script src="/assets/js/common.js"></script>
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/js/metisMenu.min.js"></script>
 <script src="/assets/js/jquery.slimscroll.js"></script>

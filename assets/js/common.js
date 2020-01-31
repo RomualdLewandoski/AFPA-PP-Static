@@ -1,9 +1,67 @@
+import nav from './template/front/nav.js';
+import ajax from './utils/ajax.js';
+
+const appPages = document.getElementById("app_pages");
+const apiUrl = "http://api.localhost/index.php/";
+const siteUrl = "http://localhost/";
+/** APP PAGE LOGIN VERIFICATION **/
+const app = $('#page');
+const page = $('#page').attr('data-page');
+
+/**
+ * GENERATION DU CODE HTML ICI
+ */
+
+switch (page.toLowerCase()) {
+    case "accueil":
+        mainPage();
+        break;
+    default :
+        console.log("T'es perdu ??");
+        break;
+}
+
+function mainPage() {
+
+    app.append(getNav(nav().view));
+}
+
+
+function getNav(maNav) {
+    console.log(maNav);
+
+}
+
+
+
+if (appPages != null) {
+    var token = localStorage.getItem('token');
+    if (token != null) {
+        $.post(
+            apiUrl + 'api/token',
+            {
+                token: localStorage.getItem('token')
+            },
+            function (data) {
+                let obj = JSON.parse(data);
+                if (obj.state == true) {
+                    console.log("CONNEXION OK");
+
+                }else{
+                    window.location.replace(siteUrl+'login');
+                }
+            },
+            'text'
+        );
+    }else{
+        window.location.replace(siteUrl+'login');
+    }
+}
+
 $(document).ready(function () {
 
-    const apiUrl = "http://api.localhost/index.php/";
-    const siteUrl = "http://localhost/";
+
     const frontpages = document.getElementById("frontPage");
-    const appPages = document.getElementById("app_pages");
     const page = $(location).attr('pathname');
     const featureTemplate = '<div class="%class%">\n' +
         '                <div class="card border-light" style="">\n' +
@@ -157,29 +215,7 @@ $(document).ready(function () {
     }
     /** END CONFIG ACTION JAX **/
 
-    /** APP PAGE LOGIN VERIFICATION **/
-    if (appPages != null) {
-        var token = localStorage.getItem('token');
-        if (token != null) {
-            $.post(
-                apiUrl + 'api/token',
-                {
-                    token: localStorage.getItem('token')
-                },
-                function (data) {
-                    let obj = JSON.parse(data);
-                    if (obj.state == true) {
-                       console.log("CONNEXION OK");
-                    }else{
-                        window.location.replace(siteUrl+'login');
-                    }
-                },
-                'text'
-            );
-        }else{
-            window.location.replace(siteUrl+'login');
-        }
-    }
+
 
     /** REGISTER ACTION AJAX **/
 

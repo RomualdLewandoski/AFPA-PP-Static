@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<script src="/assets/js/jquery.min.js"></script>
+<script type="module" src="/assets/js/common.js"></script>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,7 +10,7 @@
     <meta content="App for Moonly" name="description">
     <meta content="Romuald Detrait" name="author">
 
-    <script src="/assets/js/jquery.min.js"></script>
+
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
@@ -36,4 +38,4 @@
 
 
 </head>
-<body><!-- Begin page -->
+<body ><!-- Begin page -->
