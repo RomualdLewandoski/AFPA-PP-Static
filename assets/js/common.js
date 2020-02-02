@@ -7,6 +7,7 @@ import about from './template/front/about.js';
 import foot from './template/front/foot.js';
 import ajax from './utils/ajax.js';
 import end from "./template/front/end.js";
+import login from "./template/front/login.js";
 
 
 const appPages = document.getElementById("app_pages");
@@ -26,14 +27,17 @@ switch (page.toLowerCase()) {
     case "accueil":
         mainPage();
         break;
+    case "login":
+        loginPage();
+        break;
     default :
         console.log("T'es perdu ??");
         break;
 }
 
 function mainPage() {
-
-    app.append(getNav(nav().view));
+    //todo BELOW COME OUR TOKEN LOGIN CHECK RETURNED IN BOOLEAN nav(ajaxResult)
+    app.append(nav().view);
     app.append(masthead().view);
     app.append(features().view);
     app.append(price().view);
@@ -41,6 +45,11 @@ function mainPage() {
     app.append(about().view);
     app.append(foot().view);
     app.append(end().view);
+}
+function loginPage(){
+    app.append(nav(true).view);
+    app.append(login().view);
+    app.append(end().view)
 }
 
 

@@ -23,9 +23,10 @@ class Main extends CI_Controller
     }
 
     public function login(){
-        $this->load->view('front/head');
-        $this->load->view('front/nav');
+        $data['page'] = 'Login';
+        $this->load->view('front/head', $data);
+        /*$this->load->view('front/nav');
         $this->load->view('front/login');
-        $this->load->view('front/end');
+        $this->load->view('front/end');*/
     }
 }

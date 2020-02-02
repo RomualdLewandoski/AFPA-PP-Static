@@ -53,9 +53,20 @@ var template = `
 
 <a href="#" id="scroll" style="display: none;"><span></span></a>`;
 
-
-export default function () {
+/**
+ *
+ * @param data
+ * @returns {{view: string | *}}
+ */
+export default function (data) {
     return {
-      view: template
+      view: getNav(data)
     };
+}
+
+function getNav(data){
+    let loginUrl = "login", appUrl = "app", loginTxt = "Inscription / Connexion", appText = "Accès application";
+    template = template.replace(/%login%/g, data == true ? appText : loginTxt);
+    template = template.replace(/%loginUrl%/g, data == true ? appUrl : loginUrl);
+    return template;
 }
