@@ -1,62 +1,37 @@
-import nav from './template/front/nav.js';
-import masthead from './template/front/masthead.js';
-import features from './template/front/features.js';
-import price from './template/front/price.js';
-import talking from './template/front/talking.js';
-import about from './template/front/about.js';
-import foot from './template/front/foot.js';
-import ajax from './utils/ajax.js';
-import end from "./template/front/end.js";
 import login from "./template/front/login.js";
-
+import Vitrine from "./controller/Vitrine.js";
 
 const appPages = document.getElementById("app_pages");
 const apiUrl = "http://api.localhost/index.php/";
 const siteUrl = "http://localhost/";
-/** APP PAGE LOGIN VERIFICATION **/
+/** APP PAGE VERIFICATION **/
 const app = $('#page');
 const page = $('#page').attr('data-page');
 
 /**
- * GENERATION DU CODE HTML ICI
+ * ROUTER & CONTROLLER CALL
  */
-
-
 
 switch (page.toLowerCase()) {
     case "accueil":
-        mainPage();
-        break;
     case "login":
-        loginPage();
+        Vitrine(app, page).generate;
         break;
     default :
         console.log("T'es perdu ??");
         break;
 }
 
-function mainPage() {
-    //todo BELOW COME OUR TOKEN LOGIN CHECK RETURNED IN BOOLEAN nav(ajaxResult)
-    app.append(nav().view);
-    app.append(masthead().view);
-    app.append(features().view);
-    app.append(price().view);
-    app.append(talking().view);
-    app.append(about().view);
-    app.append(foot().view);
-    app.append(end().view);
-}
-function loginPage(){
-    app.append(nav(true).view);
-    app.append(login().view);
-    app.append(end().view)
-}
+/**
+ * END PAGE HERE
+ */
 
 
-function getNav(maNav) {
-    return maNav;
 
-}
+
+
+
+
 
 
 
