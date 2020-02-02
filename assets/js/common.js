@@ -1,4 +1,7 @@
 import nav from './template/front/nav.js';
+import masthead from './template/front/masthead.js';
+import features from './template/front/features.js';
+import price from './template/front/price.js'
 import ajax from './utils/ajax.js';
 
 const appPages = document.getElementById("app_pages");
@@ -12,6 +15,8 @@ const page = $('#page').attr('data-page');
  * GENERATION DU CODE HTML ICI
  */
 
+
+
 switch (page.toLowerCase()) {
     case "accueil":
         mainPage();
@@ -24,11 +29,14 @@ switch (page.toLowerCase()) {
 function mainPage() {
 
     app.append(getNav(nav().view));
+    app.append(masthead().view);
+    app.append(features().view);
+    app.append(price().view);
 }
 
 
 function getNav(maNav) {
-    console.log(maNav);
+    return maNav;
 
 }
 
