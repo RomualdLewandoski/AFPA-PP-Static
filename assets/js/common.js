@@ -1,8 +1,13 @@
 import nav from './template/front/nav.js';
 import masthead from './template/front/masthead.js';
 import features from './template/front/features.js';
-import price from './template/front/price.js'
+import price from './template/front/price.js';
+import talking from './template/front/talking.js';
+import about from './template/front/about.js';
+import foot from './template/front/foot.js';
 import ajax from './utils/ajax.js';
+import end from "./template/front/end.js";
+
 
 const appPages = document.getElementById("app_pages");
 const apiUrl = "http://api.localhost/index.php/";
@@ -32,6 +37,10 @@ function mainPage() {
     app.append(masthead().view);
     app.append(features().view);
     app.append(price().view);
+    app.append(talking().view);
+    app.append(about().view);
+    app.append(foot().view);
+    app.append(end().view);
 }
 
 
